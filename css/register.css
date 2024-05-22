@@ -84,11 +84,11 @@ header{
 .input-field{
     width: 100%;
     height: 32px;
-padding: 4px 10px 4px 10px;
-gap: 0px;
-opacity: 0px;
-border: 1px;
-border-radius: 6px;
+    padding: 4px 10px 4px 10px;
+    gap: 0px;
+    opacity: 0px;
+    border: 1px;
+    border-radius: 6px;
 }   
 
 
@@ -99,13 +99,13 @@ border-radius: 6px;
 }
 
 .input-box a{
-font-family: 'DM Sans';
-font-size: 16px;
-font-weight: 500;
-line-height: 22.4px;
-letter-spacing: 0.2px;
-text-align: center;
-float: right;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    float: right;
 
 }
 
@@ -253,9 +253,7 @@ h5{
     height: 32px;
     width: 224.83px;
 }
-/* .phone-box{
-    font-size: 17px;
-} */
+
 
 .indonesia-icon{
     background: url(../IMG/Indonesia.png);
@@ -269,10 +267,6 @@ h5{
 
 }
 
-/* .phone-box{
-    display: inline-block;
-
-} */
 
 .phone-container{
     height:32px;
@@ -289,7 +283,7 @@ h5{
     font-size: 16px;
     font-weight: 700;
     line-height: 22.4px;
-    letter-spacing: 0.20000000298023224px;
+    letter-spacing: 0.2px;
     text-align: left;
     text-decoration: none;
 
