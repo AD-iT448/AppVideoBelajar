@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+.nav{
+   position: fixed;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+   line-height: 100px;
+   background: linear-gradient(rgba(39, 39, 39, 0.6)) ;
+   border: 0px 0px 1px 0px;
+}
+
+.nav-logo{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-box{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 512px;
+    height: 420px;
+    background: rgb(255, 255, 255);
+}
+
+.register-container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+header{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+}
+.top span{
+    color: #8b8989;
+    font-size: 12px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 518px;
+    height: 442px;
+    gap: 24px;
+    opacity: 0px;
+    
+}
+
+.form-register{
+    gap: 10px;
+}
+
+.input-field{
+    width: 100%;
+height: Hug (48px)px;
+padding: 4px 10px 4px 10px;
+gap: 0px;
+opacity: 0px;
+border: none;
+}   
+
+
+
+.input-box label{
+    color: black;
+    font-size: 12px;
+}
+
+.input-box a{
+font-family: 'DM Sans';
+font-size: 16px;
+font-weight: 500;
+line-height: 22.4px;
+letter-spacing: 0.2px;
+text-align: center;
+float: right;
+
+}
+
+.button-satu{
+        margin-top: 20px;
+        background-color:#3ECF4C;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 10px;
+        font-family: monospace;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        cursor: pointer;
+        width: Fixed (518px)px;
+        height: Hug (30px)px;
+        gap: 0px;
+        border-radius: 10px;
+        opacity: 0px;
+        margin-top: 30px;
+        
+}
+
+.button-satu a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.button-satu a:hover a:active{
+    background-color: red;
+}
+.button-satu a:link a:visited{
+    background-color: #f44336;
+    color: white;
+    padding: 5px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-dua{
+    margin-top: 20px;
+    background-color:#E2FCD9;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: monospace;
+    color: #3ECF4C;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    width: Fixed (518px)px;
+    height: Hug (30px)px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    margin-top: 8px;
+}
+
+.button-dua a{
+    text-decoration: none;
+    color: #3ECF4C;
+}
+
+h5{
+    font-family: 'Poppins',sans-serif;
+    font-size: 9px;
+    font-weight:normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.button-google img{
+    width: 10px;
+    height: 10px;
+font-family: DM Sans;
+font-size: 16px;
+font-weight: 700;
+line-height: 22.4px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+text-decoration: none;
+
+}
+.button-google{
+    margin-top: 20px;
+    background-color:#ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: monospace;
+    color: #000000;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 8px;
+
+    width: Hug (197px)px;
+height: Hug (22px)px;
+gap: 8px;
+opacity: 0px;
+
+    
+}
+
+.button-google a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.google-container{
+    width: Hug (249px)px;
+height: Hug (38px)px;
+padding: 8px 26px 8px 26px;
+gap: 8px;
+opacity: 0px;
+
+}
+
+/* Responsive styles */
+/* @media (max-width: 768px) {
+    .wrapper{
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+} */
