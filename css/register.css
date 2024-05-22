@@ -83,11 +83,12 @@ header{
 
 .input-field{
     width: 100%;
-height: Hug (48px)px;
+    height: 32px;
 padding: 4px 10px 4px 10px;
 gap: 0px;
 opacity: 0px;
-border: none;
+border: 1px;
+border-radius: 6px;
 }   
 
 
@@ -183,13 +184,13 @@ h5{
 .button-google img{
     width: 10px;
     height: 10px;
-font-family: DM Sans;
-font-size: 16px;
-font-weight: 700;
-line-height: 22.4px;
-letter-spacing: 0.20000000298023224px;
-text-align: left;
-text-decoration: none;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-decoration: none;
 
 }
 .button-google{
@@ -204,11 +205,10 @@ text-decoration: none;
     text-align: center;
     cursor: pointer;
     margin-top: 8px;
-
     width: Hug (197px)px;
-height: Hug (22px)px;
-gap: 8px;
-opacity: 0px;
+    height: Hug (22px)px;
+    gap: 8px;
+    opacity: 0px;
 
     
 }
@@ -221,10 +221,10 @@ opacity: 0px;
 
 .google-container{
     width: Hug (249px)px;
-height: Hug (38px)px;
-padding: 8px 26px 8px 26px;
-gap: 8px;
-opacity: 0px;
+    height: Hug (38px)px;
+    padding: 8px 26px 8px 26px;
+    gap: 8px;
+    opacity: 0px;
 
 }
 
@@ -243,3 +243,83 @@ opacity: 0px;
         display: flex;
     }
 } */
+.input-field-telp{
+    border: 1px;
+    border-color: #3A3541;
+    margin-left: 15px;
+    border-radius: 6px;
+   display: inline-block;
+    justify-content: right;
+    height: 32px;
+    width: 224.83px;
+}
+/* .phone-box{
+    font-size: 17px;
+} */
+
+.indonesia-icon{
+    background: url(../IMG/Indonesia.png);
+    width: 24px;
+    height: 24px;
+    border: 15px;
+    margin-right: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px 5px;
+
+}
+
+/* .phone-box{
+    display: inline-block;
+
+} */
+
+.phone-container{
+    height:32px;
+    justify-content: left;
+    display: flex;
+
+}
+
+.phone-box img{
+    width: 10px;
+    height: 10px;
+    border: 1px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    text-decoration: none;
+
+}
+.phone-box{
+    background-color:#ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: monospace;
+    color: #000000;
+    justify-content: left;
+    cursor: pointer;
+    display: flex;
+    border: 1px;
+
+
+    
+}
+
+.phone-box a{
+    text-decoration: none;
+    padding: 3px 5px;
+    color: black;
+    font-weight: normal;
+}
+
+.phone-select{
+    border: 1px;
+    border-radius: 6px;
+    width: 70px;
+    height: 28px;
+}

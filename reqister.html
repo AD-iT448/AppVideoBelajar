@@ -27,15 +27,29 @@
        <form action="#" class="form-register" method="post">
             <div class="input-box">
                 <label for="nama">Nama Lengkap*</label>
-                <input type="text" id=nama" class="input-field" required/>
+                <input type="text" id="nama" class="input-field" required/>
             </div>
             <div class="input-box">
                 <label for="email">E-mail*</label>
-                <input type="email" id=email" class="input-field" required/>
+                <input type="email" id="email" class="input-field" required/>
             </div>
             <div class="input-box">
-                <label for="phone">Nomor Hp*</label>
-                <input type="telp" id=phone" class="input-field" required/>
+                <label for="phone">Nomor Hp*</label><br>
+                <!-- merubah fitur -->
+                <!-- <i class="indonesia-icon"></i>
+                <small>+62</small> -->
+                <div class="phone-box">
+                    <div class="phone-container">
+                    <a href="#"class="phoneNumber">
+                        <img src="IMG/Indonesia.png" alt=""> 
+                        <select class="phone-select">
+                            <option value="+62">+62</option>
+                        </select>
+                    </a>
+                    </div>
+                    <input type="telp" id="phone" class="input-field-telp" required/>
+                </div>
+                
             </div>
             <div class="input-box">
                 <label>Kata Sandi*</label>
@@ -47,15 +61,15 @@
             </div>
             
             <div class="button-satu" >
-                <a href="www.google.com" target="_blank">Daftar</a>
+                <a href="#" target="_blank">Daftar</a>
             </div>
             <div class="button-dua">
-                <a href="www.google.com" target="_blank" class="daftar">Masuk</a>
+                <a href="index.html" target="_blank" >Masuk</a>
             </div>
             <h5>atau</h5>
             <div class="button-google">
                 <div class="google-container">
-                <a href="www.google.com" target="_blank" class="daftar">
+                <a href="#" target="_blank">
                     <img src="IMG/logos_google-icon.png" alt=""> Masuk dengan google
                 </a>
             </div>
