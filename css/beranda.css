@@ -195,22 +195,12 @@ body{
     font-size: 16px;
 }
 
-/* .navigasi::before{
-    content: "";
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width:100% ;
-    height: 2px;
-    background-color: #f2fff4;
-} */
 
 /* Grid Container */
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     gap: 24px;
-    background-color: #2196F3;
     padding: 10px;
     margin-top: 35px;
   }
@@ -220,7 +210,7 @@ body{
     height: 426px;
     border-radius: 10px;
     border: 1px;
-    padding: 20px;
+    padding: 12px;
     gap: 16px;
   }
   
@@ -313,55 +303,60 @@ body{
         gap: 4px;
     }
 
-    .rating-product{
-        width: 344px;
-        height: 29px;
-        display: flex;
-    }
+.rating {
+    width: 344px;
+    height: 29px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
 
-    .rating-product ul{
-        width: 18px;
-        height: 29px;
-        justify-content: space-between;
-        list-style-type: none;
-        display: flex ;
-    }
+}
+.rating ul{
+    display: flex;
+}
 
-    .rating{
-        width: 151px;
-        height: 20px;
-        display: flex;
-    }
-    .rating ul{
-        width: 151px;
-        height: 18px;
-    }
-    .rating ul li{
-        width: 18px;
-        height: 18px;
-    }
-    .rating p{
-        width: 53px;
-        padding-left: 5px;
-        height: 20px;
-        display: flex;
-        font-family: 'DM Sans';
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 19.6px;
-        letter-spacing: 0.2px;
-    }
+.rating .rating-product{
+    width: 254px;
+    height: 20px;
+    gap: 8px;
+    display: flex;
+}
+.rating .rating-product ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
 
-    .rating-product h4{
-        width:  99px;
-        height: 29px;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 28.8px;
-        color: #3ECF4C;
-    }
+.rating .rating-product ul h4{
+    width: 53px;
+    height: 20px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0.2px;
+    margin-left: 8px;
+    display: flex;
+}
 
-    
+.rating .harga{
+    width: 99px;
+    display: flex;
+    justify-content:center;
+    height: 29px;
+}
+.rating .harga h4{
+    width: 99px;
+    height: 29px;
+    color: #3ECF4C;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0px;
+    line-height: 28.8px;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+}
 
-    
+
     
