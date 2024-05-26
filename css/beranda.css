@@ -75,7 +75,7 @@ body{
 
 
 .hero-section{
-    width: 1200px;
+    width: 90%;
     height: 400px;
     background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://s3-alpha-sig.figma.com/img/65ed/b9e6/d25fa2121b31a4ad14c9ebd02127f629?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ND5sOFJitotJr1zSpBF3wlycla0Fms2-4DogtOwHoQasu0~P14gyaYFe~Yuk~TAQKDry3PkCssgn2Zp5IRcavkH~cQb174p6vu28RfYoQh~Tn3ccUIcn63RqZ3RmiXTrRrGvH6-p4vK3TpkO-J7l~rHl-NQYOfxycxVZlB30RtAXMREzEHgFAOcXicnLTvwD1Tpihk1LfrxG8XFSq2Q5xBmuUDIOe6TWAgCgAfEWyqhXARsu5oCQg7TvcnMmzUzYs6XaPw0GmVKNucbyzvo92wDnMkaGm2Rk4EQ4GgSIPr9Uhy7NHED49u-ZdfzoTXxgGF5BzrIFAkn75ySUW~eOZA__) no-repeat center;
     margin: 64px 80px;
@@ -357,5 +357,419 @@ body{
     flex-wrap: nowrap;
 }
 
+/* section newsletter */
 
+.section-newsletter{
+    width: 1200px;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(https://s3-alpha-sig.figma.com/img/e0f7/1e25/cc34e79e1f52284620dbea34fb453966?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jjHkwlUoRgC5iUWGzMmbdcVaZx6Lw3YRPBcmOme51NVXV~T~u1MkJKle6ZBz57XFIWj08zUA7DCvGQBCpI0yF5LOm~YIoa20F14e2WMTTC7ybkQyacQHLWaFxUcs66UYKojmv-m3uIJwrqBNOmihnBe08KXZNbRg7tIQOjAQ0bN-sgxlr8S92ZBpF-wOfDdnGYGNZ7kAHXqDShxnsBBB94xzX0fwd4gUE6BWDMtQaE0XGJGZGHyUrway9MV0I7wIozICi4gJxEJq1m6tAswTlg8PU5bwwvZ17aPqmSq5qNitRnfInWut9SAJDDz8MAcQIDy7IA1MlQd44RYjNJIPOQ__) no-repeat center;
+    margin: 50px 80px;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    border-radius: 4pxpx;
+}
+
+.section-container{
+    width: 525px;
+    color: white;
+    height: 216px;
+}
+
+.section-container h1{
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.section-newsletter .details{
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.section-container h4{
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    align-items: center;
+}
+
+.section-container h3{
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 35.2px;
+    color: #FFFFFF;
+}
+
+.section-newsletter .section-container .info{
+    width: 525px;
+    max-width: 100%;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 58px;
+}
+
+.section-newsletter .section-container .info input{
+    width: 525px;
+    max-width: 100%;
+    height:  58px;
+    border-radius: 10px;
+    padding: 8px 8px 8px 32px;
+    border: 3px solid white;
+}
+.section-newsletter .section-container .info a .btn{
+    width: 132px;
+    height:  80%;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 8px 8px 8px 32px;
+    background-color: #FFBD3A;
+    border: 3px solid white;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+
+/* .section-contact{
+    width: 100%;
+    height: 427px;
+    padding: 60px 80px;
+    gap: 20px;
+}
+
+.section-contact  .footer-container .footer{
+    width: 100%;
+    height: 199px;
+    justify-content: space-between;
+}
+
+.section-contact .footer-container .footer .footer-address{
+    width: 204px;
+    height: 56px;
+    background-color: #3ECF4C;
+}
+
+.section-contact .footer-container .footer{
+    width: 352px;
+    height: 190px;
+    gap: 16px;
+    border: 1px solid green;
+}
+
+.section-contact .footer-container .footer .footer-address img{
+    position: relative;
+    width: 193.03px;
+    height: 30.08px;
+    top: 13px;
+    left: 5px;
+}
+
+.section-contact .footer-container .footer .detail-address{
+    width: 352px;
+    height: 118px;
+    gap: 12px;
+    margin-top: 16px;
+}
+.section-contact .footer-container .footer .detail-address h4{
+    width: 352px;
+    height: 50px;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.section-contact .footer-container .footer .detail-address span h5{
+    width: 352px;
+    height: 22px;  
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #3A3541;
+}
+.section-contact .footer-container .footer .detail-address span{
+    width: 352px;
+    height: 22px;  
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #222325;
+}
+
+.section-contact .footer-info {
+    width: 150px;
+    height: 199px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-contact .footer-info .details-info{
+    width: 150px;
+    height: 199px;
+    gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.section-contact .footer-info .details-info ul{
+    width: 150px;
+    height: 199px;
+}
+.section-contact .footer-info .details-info ul li{
+    list-style-type: none;
+
+}
+
+.section-contact .footer-info .details-info ul  .judul{
+    width: 66px;
+    height: 22px;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    initial-letter: 0.2px;
+    color: #222325;
+}
+
+.section-contact .footer-info .details-info ul li{
+    width:150px;
+    height: 22px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #333333AD;
+
+} */
+
+.footer-container{
+    width: 100%;
+    height: 427px;
+    display: flex;
+    padding: 60px 80px;
+}
+.footer-container .container{
+    width: 100%;
+    height: 100%;
+}
+.footer-container .container .details{
+    height: 90%;
+    display: flex;
+}
+.footer-container .container .details .detail-address{
+    height: 190px;
+}
+.footer-container .container .details .detail-address .logo{
+    display: block;
+    width: 204px;
+    height: 56px;
+}
+.footer-container .container .details .detail-address a img{
+    position: relative;
+    width: 193.03px;
+    height: 30.08px;
+    top: 13px;
+    left: 5px;
+}
+.footer-container .container .details .detail-address p{
+    position: relative;
+    font-weight: bold;
+    width: 352px;
+    height: 50px;
+    font-family: 'DM Sans';
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #222325;
+    margin-top: 13px;
     
+}
+.footer-container .container .details .detail-address h5{
+    position: relative;
+    font-weight: 400;
+    width: 352px;
+    height: 22px;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #222325;
+    letter-spacing: 0.2px;
+    margin-top: 13px;
+}
+.footer-container .container .details .detail-info{
+    width: 40%;
+    height: 190px;
+    display: flex;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #222325;
+    letter-spacing: 0.2px;
+    position: absolute;
+    margin-left: 54%;
+}
+.footer-container .container .details .detail-info .kategori{
+    height: 190px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 400;
+    display: flex;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #222325;
+    margin-right: 24px;
+}
+.footer-container .container .details .detail-info .kategori .title{
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+    display: flex;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #222325;
+}
+.footer-container .container .details .detail-info .perusahaan{
+    height: 190px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 400;
+    display: flex;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #222325;
+    margin-right: 24px;
+}
+.footer-container .container .details .detail-info .perusahaan .title{
+    width: 93px;
+    height: 22px;
+    justify-content: space-around;
+    font-weight: bold;
+    display: flex;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #222325;
+}
+.footer-container .container .details .detail-info .komunitas{
+    height: 94px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: 400;
+    display: flex;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    color: #222325;
+}
+.footer-container .container .details .detail-info .komunitas .title{
+    height: 22px;
+    flex-direction: column;
+    justify-content: space-around;
+    font-weight: bold;
+    display: flex;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    color: #222325;
+}
+.footer-container .container .details .detail-info a{
+   text-decoration: none;
+   color: #222325;
+}
+.footer-container .container .details .detail-info a:hover{
+   text-decoration: none;
+   color: #F64920;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.footer-container .container .footer-sosmed{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container .container .footer-sosmed p{
+    width: 330px;
+    height: 22px;
+    font-family: 'DM Sans';
+    margin: 6px 0;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    color: #333333;
+}
+.footer-container .container .footer-sosmed .icon-sosmed{
+    width: 185px;
+    height: 35px;
+    font-family: 'DM Sans';
+    margin: 6px 0;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    color: #333333;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1px;
+}
+.footer-container .container .footer-sosmed .icon-sosmed .icon{
+    display: flex;
+    width: 185px;
+    height: 35px;
+    gap: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.footer-container .container .footer-sosmed .icon-sosmed .icon a{
+    border-radius:9999px;
+    padding: .25rem;
+    background-color: #ffffff;
+    border-color: rgb(136, 131, 131);
+    border: 1.5px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+.footer-container .container .footer-sosmed .icon-sosmed .icon a:hover{
+    border-radius:9999px;
+    padding: .25rem;
+    background-color: #ffffff;
+    border-color: rgb(85, 74, 74);
+    border: 2px solid rgb(85, 74, 74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
