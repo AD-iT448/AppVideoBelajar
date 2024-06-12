@@ -20,29 +20,38 @@ body{
     min-height: 110vh;
 }
 .nav{
-   position: fixed;
+    position: fixed;
    top: 0;
-   display: flex;
-   justify-content: space-between;
+   display: block;
    width: 100%;
-   height: 100%;
-   line-height: 100px;
-   background: linear-gradient(rgba(39, 39, 39, 0.6)) ;
-   border: 0px 0px 1px 0px;
+   height: 15%;
+   overflow: hidden;
+   
 }
 
-.nav-logo{
-    font-size: 25px;
-    font-weight: 600;
+.nav .logo-container{
+    width: 237px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin :24px 80px;
 }
 
+.nav .logo-container .logo{
+    height: 30px;
+    top: 13px;
+    left: 22px;
+}
 .form-box{
     position: fixed;
     display: flex;
     align-items: center;
     width: 512px;
     height: 420px;
-    background: rgb(255, 255, 255);
+    margin-top: 9%;
+    /* background: rgb(255, 255, 255); */
 }
 
 .login-container{
@@ -228,18 +237,48 @@ opacity: 0px;
 
 }
 
-/* Responsive styles */
-/* @media (max-width: 768px) {
-    .wrapper{
-        display: none;
-        flex-direction: column;
+ /* Aturan CSS untuk layar kecil (ponsel) */
+@media screen and (max-width: 640px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
     }
-
-    .nav-toggle-label {
-        display: block;
+    body {
+        background-color: rgb(255, 255, 255);
+        background-attachment: fixed;
+        overflow: hidden;
     }
-
-    .nav-toggle:checked ~ .nav-menu {
+    .nav{
+        position: fixed;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 74px;
+       overflow: hidden;
+    }
+    .nav .logo-container{
+        width: 237px;
+        height: 56px;
         display: flex;
+        gap: 60px;
+        margin-right: 60%;
     }
-} */
+    .nav .logo-container .logo{
+        height: 30px;
+        top: 13px;
+        left: 22px;
+    }
+
+    .form-box{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 512px;
+        height: 420px;
+        /* background: rgb(255, 255, 255); */
+    }
+
+}
