@@ -10,6 +10,7 @@
 body{
     background-color: rgb(255, 255, 255);
     background-attachment: fixed;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -17,36 +18,47 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    min-height: 992px;
 }
 .nav{
-   position: fixed;
+    position: fixed;
    top: 0;
-   display: flex;
-   justify-content: space-between;
+   display: block;
    width: 100%;
-   height: 100%;
-   line-height: 100px;
-   background: linear-gradient(rgba(39, 39, 39, 0.6)) ;
-   border: 0px 0px 1px 0px;
+   height: 15%;
+   overflow: hidden;
+   
 }
 
-.nav-logo{
-    font-size: 25px;
-    font-weight: 600;
+.nav .logo-container{
+    width: 237px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin :24px 80px;
 }
 
-.form-box{
+.nav .logo-container .logo{
+    height: 30px;
+    top: 13px;
+    left: 22px;
+}
+
+/* .form-box{
     position: fixed;
     display: flex;
     align-items: center;
     width: 512px;
     height: 420px;
     background: rgb(255, 255, 255);
-}
+} */
 
-.register-container{
-    width: 300px;
+.form-register{
+    margin-top: 20px;
+    width: 590px;
+    height: 893px;
     display: flex;
     flex-direction: column;
     transition: .5s ease-in-out;
@@ -70,15 +82,17 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 518px;
-    height: 442px;
-    gap: 24px;
+    width: 590px;
+    height: 893px;
+    gap: 36px;
     opacity: 0px;
     
 }
 
-.form-register{
-    gap: 10px;
+.form-box .register{
+    width: 590px;
+    height: 893px;
+    padding-top: 48px;
 }
 
 .input-field{
@@ -120,8 +134,8 @@ header{
         padding: 8px;
         text-align: center;
         cursor: pointer;
-        width: Fixed (518px)px;
-        height: Hug (30px)px;
+        width: 518px;
+        height: 30px;
         gap: 0px;
         border-radius: 10px;
         opacity: 0px;
@@ -158,8 +172,8 @@ header{
     padding: 8px;
     text-align: center;
     cursor: pointer;
-    width: Fixed (518px)px;
-    height: Hug (30px)px;
+    width: 518px;
+    height: 30px;
     gap: 0px;
     border-radius: 10px;
     opacity: 0px;
@@ -179,6 +193,8 @@ h5{
     justify-content: center;
     align-items: center;
     margin-top: 8px;
+    width: 518px;
+    height: 30px;
 }
 
 .button-google img{
@@ -205,8 +221,8 @@ h5{
     text-align: center;
     cursor: pointer;
     margin-top: 8px;
-    width: Hug (197px)px;
-    height: Hug (22px)px;
+    width: 518px;
+    height: 30px;
     gap: 8px;
     opacity: 0px;
 
@@ -317,3 +333,205 @@ h5{
     width: 70px;
     height: 28px;
 }
+
+
+
+ /* Aturan CSS untuk layar kecil (ponsel) */
+ @media (min-height: 680px), screen and (orientation: portrait) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    body {
+        background-color: rgb(255, 255, 255);
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 992px;
+    }
+    .nav{
+        position: fixed;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 74px;
+       overflow: hidden;
+    }
+    .nav .logo-container{
+        width: 237px;
+        height: 56px;
+        display: flex;
+        gap: 60px;
+        margin-right: 60%;
+    }
+    .nav .logo-container .logo{
+        height: 30px;
+        top: 13px;
+        left: 22px;
+    }
+
+    .form-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 866px;
+        gap: 24px;
+        opacity: 0px;
+    }
+    
+    .form-box .form-register{
+        width: 100%;
+        height: 750px;
+        padding: 20px;
+    }
+
+    .input-field{
+    width: 100%;
+    height: 32px;
+    padding: 4px 40px;
+    gap: 20px;
+    opacity: 0px;
+    border: 1px;
+    border-radius: 6px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+
+
+.input-box label{
+    color: black;
+    font-size: 12px;
+    padding: 40px;
+}
+
+.input-box a{
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    float: right;
+}
+
+.indonesia-icon{
+    background: url(../IMG/Indonesia.png);
+    width: 24px;
+    height: 24px;
+    border: 15px;
+    margin-right: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px 5px;
+
+}
+
+
+.phone-container{
+    height:32px;
+    justify-content: left;
+    display: flex;
+
+}
+
+.phone-box img{
+    width: 10px;
+    height: 10px;
+    border: 1px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    text-decoration: none;
+
+}
+.phone-box{
+    background-color:#ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: monospace;
+    color: #000000;
+    justify-content: left;
+    cursor: pointer;
+    display: flex;
+    border: 1px;
+    padding: 40px;
+
+
+    
+}
+
+.phone-box a{
+    text-decoration: none;
+    padding: 3px 5px;
+    color: black;
+    font-weight: normal;
+}
+
+.phone-select{
+    border: 1px;
+    border-radius: 6px;
+    width: 70px;
+    height: 28px;
+}
+
+}
+
+/* @media (min-height: 320px), screen and (orientation: portrait) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    body {
+        background-color: rgb(255, 255, 255);
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    .nav{
+        position: fixed;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 74px;
+       overflow: hidden;
+    }
+    .nav .logo-container{
+        width: 237px;
+        height: 56px;
+        display: flex;
+        gap: 60px;
+        margin-right: 60%;
+    }
+    .nav .logo-container .logo{
+        height: 30px;
+        top: 13px;
+        left: 22px;
+    }
+
+    .form-box{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 320px;
+        /* background: rgb(255, 255, 255); */
+    /* }
+
+}  */

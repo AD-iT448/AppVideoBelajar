@@ -238,7 +238,7 @@ opacity: 0px;
 }
 
  /* Aturan CSS untuk layar kecil (ponsel) */
-@media screen and (max-width: 640px) {
+ @media (min-height: 680px), screen and (orientation: portrait) {
     *{
         margin: 0;
         padding: 0;
