@@ -46,18 +46,11 @@ body{
     left: 22px;
 }
 
-/* .form-box{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    width: 512px;
-    height: 420px;
-    background: rgb(255, 255, 255);
-} */
+
 
 .form-register{
     margin-top: 20px;
-    width: 590px;
+    width: 450px;
     height: 893px;
     display: flex;
     flex-direction: column;
@@ -85,14 +78,14 @@ header{
     width: 590px;
     height: 893px;
     gap: 36px;
+    margin-top: 48px;
     opacity: 0px;
     
 }
 
 .form-box .register{
-    width: 590px;
+    width: 450px;
     height: 893px;
-    padding-top: 48px;
 }
 
 .input-field{
@@ -134,7 +127,7 @@ header{
         padding: 8px;
         text-align: center;
         cursor: pointer;
-        width: 518px;
+        width:450px;
         height: 30px;
         gap: 0px;
         border-radius: 10px;
@@ -172,7 +165,7 @@ header{
     padding: 8px;
     text-align: center;
     cursor: pointer;
-    width: 518px;
+    width: 450px;
     height: 30px;
     gap: 0px;
     border-radius: 10px;
@@ -193,7 +186,7 @@ h5{
     justify-content: center;
     align-items: center;
     margin-top: 8px;
-    width: 518px;
+    width: 450px;
     height: 30px;
 }
 
@@ -221,7 +214,7 @@ h5{
     text-align: center;
     cursor: pointer;
     margin-top: 8px;
-    width: 518px;
+    width: 450px;
     height: 30px;
     gap: 8px;
     opacity: 0px;
@@ -348,13 +341,7 @@ h5{
         background-color: rgb(255, 255, 255);
         background-attachment: fixed;
         overflow: hidden;
-    }
-
-    .wrapper{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 992px;
+        scroll-behavior: smooth;
     }
     .nav{
         position: fixed;
@@ -379,26 +366,26 @@ h5{
     }
 
     .form-box{
+        position: fixed;
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 866px;
-        gap: 24px;
-        opacity: 0px;
+        width: 590px;
+        height: 750px;
     }
     
+    .form-box .register{
+        width: 450px;
+        height: 893px;
+    }
     .form-box .form-register{
-        width: 100%;
+        width: 518px;
         height: 750px;
-        padding: 20px;
     }
 
     .input-field{
     width: 100%;
     height: 32px;
     padding: 4px 40px;
-    gap: 20px;
     opacity: 0px;
     border: 1px;
     border-radius: 6px;
@@ -413,7 +400,7 @@ h5{
 .input-box label{
     color: black;
     font-size: 12px;
-    padding: 40px;
+    padding: 30px;
 }
 
 .input-box a{
@@ -424,6 +411,10 @@ h5{
     letter-spacing: 0.2px;
     text-align: center;
     float: right;
+}
+
+.input-box .phone-box{
+    height: 30px;
 }
 
 .indonesia-icon{
@@ -471,6 +462,7 @@ h5{
     display: flex;
     border: 1px;
     padding: 40px;
+    
 
 
     
