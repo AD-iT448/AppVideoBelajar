@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class=" bg-yellow-50">
+
+   <!-- Navbar -->
+   <nav class="container w-full bg-white p-4 grid grid-cols-1 lg:flex lg:flex-col  md:grid-cols-1 lg:grid-cols-1 ">
+    <div class=" container bg-white lg:w-11/12 ">
+        <img src="img/Logo.png" alt="">
+    </div>
+    </nav>
+
+    <!-- Form Registrasi -->
+    <div class="container mx-auto mt-10 mb-10">
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold mb-2 text-center">Pendaftaran Akun</h2>
+            <h3 class="text-xs text-slate-400 text-center mb-4">Yuk, Daftarkan Akunmu Sekarang juga</h3>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Nama Lengkap <span class="text-red-500">*</span></label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email <span class="text-red-500">*</span></label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 font-bold mb-2">Nomor HP <span class="text-red-500">*</span></label>
+                    <div class="flex">
+                        <div class="flex items-center px-3 py-2 border border-gray-300 rounded-l-md bg-gray-50">
+                            <span class="flag-icon flag-icon-id mr-2"></span>
+                            +62
+                        </div>
+                        <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-r-md focus:outline-none focus:border-blue-500" required>
+                    </div>
+                </div>
+                <div class="mb-4 relative">
+                    <label for="password" class="block text-gray-700 font-bold mb-2">Password <span class="text-red-500">*</span></label>
+                    <div class="container flex flex-row bg-white items-center   rounded-md w-full bg-white border border-gray-300 ">
+                        <input type="text "  id="password" name="password" class="w-full px-3 py-2  border-gray-300 rounded-md focus:border-blue-500  pr-10" required>
+                        <img src="img/icon/eye.png" class="h-5 bg-white text-center px-2 lg:flex lg:justify-center ">
+                    </div>
+                    
+                </div>
+                <div class="mb-6 relative">
+                    <label for="confirm-password" class="block text-gray-700 font-bold mb-2">Konfirmasi Password <span class="text-red-500">*</span></label>
+                    <div class="container flex flex-row bg-white items-center   rounded-md w-full bg-white border border-gray-300 ">
+                        <input type="text "  id="password" name="password" class="w-full px-3 py-2  border-gray-300 rounded-md focus:border-blue-500  pr-10" required>
+                        <img src="img/icon/eye.png" class="h-5 bg-white text-center px-2  lg:flex lg:justify-center ">
+                    </div>
+                </div>
+                <h6 class="text-xs mb-4 flex justify-end"><a href="#">Lupa Password?</a></h6>
+                <button type="submit" class="w-full bg-green-500 text-white font-bold py-2 px-4 rounded-md hover:bg-green-600">Daftar</button>
+                <button type="submit" class="w-full bg-green-100 text-green-500 font-bold py-2 px-4 rounded-md hover:bg-green-200 mt-3"><a href="login.html"> Masuk</a></button>
+               
+            </form>
+            <div class="h-3 mb-2 text-center border-b-grey-ec border-b mt-2">
+                <span class="bg-white px-3.5 sm-only:text-sm">atau</span>
+            </div>
+            <div class="mt-6">
+                <button class="w-full bg-white text-gray-700 font-bold py-2 px-4 rounded-md border border-gray-300 flex items-center justify-center hover:bg-gray-100">
+                    <img src="img/google.png" alt="Google Logo" class="w-5 h-5 mr-2">
+                    Daftar dengan Google
+                </button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+        const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+        const confirmPassword = document.querySelector('#confirm-password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        toggleConfirmPassword.addEventListener('click', function () {
+            const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPassword.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+</body>
+</html>
