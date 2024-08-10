@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors:{
       'lime' : '#a3e635',
+      'azure' : '#F0FFFF'
     },
     extend: {
       container:{
